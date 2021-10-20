@@ -24,3 +24,11 @@ git push -f origin last_known_good_commit:branch_name
 
 [more info](https://medium.com/@slamflipstrom/a-beginners-guide-to-squashing-commits-with-git-rebase-8185cf6e62ec)
 
+
+### How to change the last commit message after push
+
+* git commit --amend -m "New message"
+* git push --force repository-name branch-name
+* 	Ex:- git push --force origin feature-revocation-api
+
+
