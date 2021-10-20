@@ -21,6 +21,16 @@ git checkout <hash of your good commit message>
 git push -f origin last_known_good_commit:branch_name
 
 ### How to squash commits
+* git rebase -i HEAD~<no of commits >
+
+* These commands will bring up the below interface with options to perform the following: <br>
+p, pick = use commit<br>
+r, reword = use commit, but edit the commit message<br>
+e, edit = use commit, but stop for amending<br>
+s, squash = use commit, but meld into previous commit<br>
+f, fixup = like “squash”, but discard this commit’s log message<br>
+x, exec = run command (the rest of the line) using shell<br>
+d, drop = remove commit<br>
 
 [more info](https://medium.com/@slamflipstrom/a-beginners-guide-to-squashing-commits-with-git-rebase-8185cf6e62ec)
 
